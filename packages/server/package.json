@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "PORT=3001 ts-node index.ts",
+    "start": "cross-env TESTNET_API_PORT=3000 PORT=3001 ts-node index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "BoBeenLee",
@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.2"
   },
